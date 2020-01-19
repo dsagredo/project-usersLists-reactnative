@@ -8,7 +8,7 @@ const userDetail = ({ navigation }) => {
     useEffect(() => {
         setDetail({ 'user': navigation.state.params.user });
     }, []);
-    console.log('isDetail', isDetail);
+
     if (isDetail.length === 0) {
         return (
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
